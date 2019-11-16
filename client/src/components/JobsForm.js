@@ -59,12 +59,7 @@ class JobsForm extends React.Component {
         let lurl = jobsUrl;
  
         fetch(lurl, {
-            method: "GET",
-            //mode: 'no-cors',
-            headers: {
-                //Accept : 'application/json',
-                'Content-Type' : 'application/json'
-            },
+            method: "GET"
         })
         .then(res => res.json())
         .then(
